@@ -3,22 +3,21 @@ import { getLocalStorage, saveLocalStorage } from './localStorage.js';
 import ToDoList from './toDoList.js';
 import ToDoItem from './toDoItem.js';
 
-const addToDo = document.querySelector('#addToDo')
+const addToDo = document.querySelector('#addToDo');
 const addList = document.querySelector('#addList');
 const container = document.querySelector('#container');
 const myToDo = new ToDoList(container);
 
 addToDo.addEventListener('submit', (e) => {
-  e.preventDefault()
+  e.preventDefault();
   const item = new ToDoItem(
     addList.value,
-    myToDo.list.length+1,
+    myToDo.list.length + 1,
   );
   myToDo.list.push(item);
   myToDo.createToDo(item);
   saveLocalStorage(myToDo);
-  console.log(myToDo);
-  addList.value = ''
+  addList.value = '';
 });
 
 getLocalStorage(myToDo);
