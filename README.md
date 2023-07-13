@@ -133,6 +133,9 @@ Install this project with:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Implement more styles**
+- [ ] **Add functionalities to add and remove elements**
+- [ ] **Implement data recovery using the local storage**
+- [ ] **Create interactivity to check and uncheck tasks**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
