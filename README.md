@@ -36,14 +36,11 @@ For more information on the importance of a professional README for your reposit
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -76,14 +73,6 @@ For more information on the importance of a professional README for your reposit
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://yulianav09.github.io/To-Do-list/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -107,11 +96,19 @@ Clone this repository to your desired folder:
 
 ### Install
 
-Install this project with:
+Run the following command in your terminal to download all the packages needed to make the project run:
 
 
 ```sh
   npm i
+```
+
+### Usage
+
+After installing the project, run the following command to execute the project in your browser:
+
+```sh
+  npm start
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -123,7 +120,7 @@ Install this project with:
 👤 **Author1**
 
 - GitHub: [@gYuliana09](https://github.com/Yulianav09)
-- Twitter: [@Yuliana Velez Rodríguez](https://twitter.com/YulianaVel09e)
+- Twitter: [@Yuliana Velez Rodríguez](https://twitter.com/YulianaVel09)
 - LinkedIn: [Yuliana Velez Rodriguez](https://www.linkedin.com/in/yuliana-velez-rodriguez/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
