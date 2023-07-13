@@ -18,3 +18,15 @@ main {
   display: flex;
   flex-direction: row;
 }
+
+.hidden {
+  display: none;
+}
+
+.deleter {
+  cursor: pointer;
+}
+
+.dragger {
+  cursor: move;
+}
