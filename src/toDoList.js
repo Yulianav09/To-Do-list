@@ -26,6 +26,11 @@ createToDo = (toDo) => {
     saveLocalStorage(this);
   });
 
+  description.addEventListener('change', (e) => {
+    toDo.description = e.target.value;
+    saveLocalStorage(this);
+  });
+
   description.addEventListener('focus', () => {
     dragger.classList.add('hidden');
     deleter.classList.remove('hidden');
