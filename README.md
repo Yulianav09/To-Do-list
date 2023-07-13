@@ -53,10 +53,10 @@ For more information on the importance of a professional README for your reposit
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Awesome Books <a name="Awesome Books"></a>
+# 📖 To-Do list <a name="To-Do list"></a>
 
 
-**Awesome Books** is a simple book list
+**To-Do list** is a project to add tasks to a list, you can check and remove the tasks you already completed
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -70,9 +70,9 @@ For more information on the importance of a professional README for your reposit
 
 ### Key Features <a name="key-features"></a>
 
-- **Adding Book**
-- **Deleting Books**
-- **Saved books when you refresh**
+- **Adding new task**
+- **Deleting tasks**
+- **Saved tasks when you refresh**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,7 +80,7 @@ For more information on the importance of a professional README for your reposit
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yulianav09.github.io/Awesome-books/)
+- [Live Demo Link](https://yulianav09.github.io/To-Do-list/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +102,7 @@ Clone this repository to your desired folder:
 
 
 ```sh
-  git clone https://github.com/Yulianav09/Awesome-books
+  git clone https://github.com/Yulianav09/To-Do-list
 ```
 
 ### Install
@@ -142,7 +142,7 @@ Install this project with:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Yulianav09/Awesome-books-ES6/issues).
+Feel free to check the [issues page](https://github.com/Yulianav09/To-Do-list/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

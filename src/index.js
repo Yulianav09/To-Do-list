@@ -1,23 +1,37 @@
 import './style.css';
-import { getLocalStorage, saveLocalStorage } from './localStorage.js';
-import ToDoList from './toDoList.js';
-import ToDoItem from './toDoItem.js';
-
-const addToDo = document.querySelector('#addToDo');
-const addList = document.querySelector('#addList');
 const container = document.querySelector('#container');
-const myToDo = new ToDoList(container);
+const toDo = [
+  {
+    description : "task number 1",
+    completed : false,
+    index : 1, 
+  },
+  {
+    description : "task number 2",
+    completed : true,
+    index : 2, 
+  },
+  {
+    description : "task number 3",
+    completed : false,
+    index : 3, 
+  }
+]
 
-addToDo.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const item = new ToDoItem(
-    addList.value,
-    myToDo.list.length + 1,
-  );
-  myToDo.list.push(item);
-  myToDo.createToDo(item);
-  saveLocalStorage(myToDo);
-  addList.value = '';
-});
+const createToDo = (toDo) => {
+  const toDoItem = document.createElement('article');
+  toDoItem.classList.add('toDoItem');
 
-getLocalStorage(myToDo);
+  toDoItem.innerHTML = `
+  <input type="checkbox" ${toDo.completed ? 'checked' : ''}>
+  <input class="description" value="${toDo.description}">
+  <div class="dragger">&#8942;</div>
+  <div class="deleter hidden">&#128465;</div>
+  `
+  container.appendChild(toDoItem);
+}
+
+toDo.sort((a,b) => a.index-b.index);
+for (let i = 0; i < toDo.length; i += 1) {
+  createToDo(toDo[i])
+}
