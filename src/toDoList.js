@@ -1,6 +1,6 @@
-import { saveLocalStorage } from "./localStorage";
+import { saveLocalStorage } from './localStorage.js';
 
-export default class ToDoList{
+export default class ToDoList {
   constructor(container) {
     this.container = container;
     this.list = [];
@@ -9,35 +9,35 @@ export default class ToDoList{
 createToDo = (toDo) => {
   const toDoItem = document.createElement('form');
   toDoItem.classList.add('toDoItem');
- 
+
   toDoItem.innerHTML = `
-  <input type="checkbox" ${toDo.completed ? `checked`:``}>
+  <input type="checkbox" ${toDo.completed ? 'checked' : ''}>
   <input class="description" value="${toDo.description}">
   <div class="dragger">&#8942;</div>
   <div class="deleter hidden">&#128465;</div>
-  `
-  const description = toDoItem.querySelector('.description')
-  const dragger = toDoItem.querySelector('.dragger')
-  const deleter = toDoItem.querySelector('.deleter')
-  
-  deleter.addEventListener('click', (e) =>{
+  `;
+  const description = toDoItem.querySelector('.description');
+  const dragger = toDoItem.querySelector('.dragger');
+  const deleter = toDoItem.querySelector('.deleter');
+
+  deleter.addEventListener('click', (e) => {
     this.removeToDo(e, toDo);
     this.reorderIndex();
     saveLocalStorage(this);
-  })
+  });
 
-  description.addEventListener("focus",() => {
-    dragger.classList.add ("hidden")
-    deleter.classList.remove('hidden')
-  })
+  description.addEventListener('focus', () => {
+    dragger.classList.add('hidden');
+    deleter.classList.remove('hidden');
+  });
 
-  description.addEventListener("blur",() => {
-    setTimeout(function() {
-    dragger.classList.remove ("hidden")
-    deleter.classList.add ('hidden')
+  description.addEventListener('blur', () => {
+    setTimeout(() => {
+      dragger.classList.remove('hidden');
+      deleter.classList.add('hidden');
     }, 150);
-  })
-  container.appendChild(toDoItem);
+  });
+  this.container.appendChild(toDoItem);
 }
 
 removeToDo = (e, toDoData) => {
@@ -46,10 +46,9 @@ removeToDo = (e, toDoData) => {
 }
 
 reorderIndex = () => {
-  this.list = this.list.map((element,index) => {
-    element.index = index+1
-    return element
-  })
-  console.log(this.list);
+  this.list = this.list.map((element, index) => {
+    element.index = index + 1;
+    return element;
+  });
 }
 }
