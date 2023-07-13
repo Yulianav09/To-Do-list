@@ -132,7 +132,11 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Implement more styles**
+- [x] **Implement more styles**
+- [x] **Add functionalities to add and remove elements**
+- [x] **Implement data recovery using the local storage**
+- [ ] **Create interactivity to check and uncheck tasks**
+- [ ] **Deploy Webpack project**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
