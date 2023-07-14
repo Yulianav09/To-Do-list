@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
+  "homepage": "https://yulianav09.github.io/To-Do-list/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
