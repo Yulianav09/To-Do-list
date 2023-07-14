@@ -51,6 +51,11 @@ main {
   width: 100%;
 }
 
+.checkedTask {
+  text-decoration: line-through;
+  color: #929292;
+}
+
 #addList {
   width: 100%;
   font-style: italic;

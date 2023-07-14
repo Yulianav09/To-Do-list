@@ -3,5 +3,6 @@ export default class ToDoItem {
     this.description = description;
     this.completed = false;
     this.index = index;
+    this.markUp = null;
   }
 }
