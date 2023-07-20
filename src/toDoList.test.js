@@ -18,7 +18,6 @@ myToDo.list.push(item);
 
 describe('Adding', () => {
   test('Test if container is empty', () => {
-    // expect(myToDo).toBeInstanceOf(ToDoList)
     expect(container.innerHTML).toHaveLength(0);
   });
 
