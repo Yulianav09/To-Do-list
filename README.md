@@ -132,6 +132,12 @@ After installing the project, run the following command to execute the project i
 - Twitter: [@Yuliana Velez Rodríguez](https://twitter.com/YulianaVel09)
 - LinkedIn: [Yuliana Velez Rodriguez](https://www.linkedin.com/in/yuliana-velez-rodriguez/)
 
+👤 **Iván Gonzalez**
+
+- GitHub: [@ivangonzalez224](https://github.com/ivangonzalez224)
+- Twitter: [@ivang2204](https://twitter.com/ivang2204)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/iván-gonzalez-robles-957491275)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
