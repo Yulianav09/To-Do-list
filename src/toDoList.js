@@ -1,4 +1,4 @@
-import toggleCheck from './checkBox.js';
+import { toggleCheck } from './checkBox.js';
 import { saveLocalStorage } from './localStorage.js';
 
 export default class ToDoList {

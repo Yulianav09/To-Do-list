@@ -2,6 +2,7 @@
  * @jest-environment jsdom
  */
 
+import { clearAllCompleted } from './checkBox.js';
 import ToDoList from './toDoList.js';
 
 document.body.innerHTML = `
@@ -37,6 +38,23 @@ describe('update state', () => {
   checkBox.dispatchEvent(changeEvent) // Executed the event to trigger the event listener inside the myToDO object
   
   test('Test if state changed',() => {
-    expect(myToDo.list[0].completed).toBe(true)
+    expect(myToDo.list[0].completed).toBeTruthy()
+  })
+})
+
+describe('clear all completed', () => {
+  const item2 = {
+    description: 'task 2',
+    completed: false,
+    index: 1,
+    markUp: null,
+  };
+  myToDo.list.push(item2);
+  myToDo.createToDo(item2);
+  
+  test('Test if completed tasks are removed',() => {
+    clearAllCompleted(myToDo)
+
+    expect(myToDo.list).toHaveLength(1)
   })
 })
