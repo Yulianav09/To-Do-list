@@ -2,6 +2,7 @@ import './style.css';
 import { getLocalStorage, saveLocalStorage } from './localStorage.js';
 import ToDoList from './toDoList.js';
 import ToDoItem from './toDoItem.js';
+import { clearAllCompleted } from './checkBox.js';
 
 const clearButton = document.querySelector('.clearButton');
 const addToDo = document.querySelector('#addToDo');
@@ -22,10 +23,7 @@ addToDo.addEventListener('submit', (e) => {
 });
 
 clearButton.addEventListener('click', () => {
-  myToDo.list = myToDo.list.filter((toDoFilter) => {
-    if (toDoFilter.completed) toDoFilter.markUp.remove();
-    return !toDoFilter.completed;
-  });
+  clearAllCompleted(myToDo);
   saveLocalStorage(myToDo);
 });
 
