@@ -36,6 +36,7 @@ For more information on the importance of a professional README for your reposit
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -70,6 +71,14 @@ For more information on the importance of a professional README for your reposit
 - **Adding new task**
 - **Deleting tasks**
 - **Saved tasks when you refresh**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://yulianav09.github.io/To-Do-list/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,7 +142,7 @@ After installing the project, run the following command to execute the project i
 - [x] **Add functionalities to add and remove elements**
 - [x] **Implement data recovery using the local storage**
 - [x] **Create interactivity to check and uncheck tasks**
-- [ ] **Deploy Webpack project**
+- [x] **Deploy Webpack project**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
