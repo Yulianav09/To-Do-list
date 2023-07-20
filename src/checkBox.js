@@ -11,4 +11,4 @@ export const clearAllCompleted = (ToDo) => {
     if (toDoFilter.completed) toDoFilter.markUp.remove();
     return !toDoFilter.completed;
   });
-}
+};

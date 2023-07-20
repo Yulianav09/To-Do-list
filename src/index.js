@@ -23,7 +23,7 @@ addToDo.addEventListener('submit', (e) => {
 });
 
 clearButton.addEventListener('click', () => {
-  clearAllCompleted(myToDo)
+  clearAllCompleted(myToDo);
   saveLocalStorage(myToDo);
 });
 
