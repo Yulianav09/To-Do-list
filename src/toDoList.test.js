@@ -2,7 +2,6 @@
  * @jest-environment jsdom
  */
 
-import { describe } from 'yargs';
 import ToDoList from './toDoList.js';
   document.body.innerHTML =`
       <div id="container"></div>`;
@@ -32,6 +31,12 @@ import ToDoList from './toDoList.js';
 
   describe('Remove elements', () => {
     test('test removing elements', () =>{
-      myToDo.removeToDo
+      const button = document.querySelector('.deleter')
+      const event = {target : button}
+      myToDo.removeToDo(event, item)
+      expect(container.innerHTML).toHaveLength(0);
+    })
+    test('Test container', () => {
+      expect(container.innerHTML.length).not.toBeGreaterThan(0)
     })
   })
