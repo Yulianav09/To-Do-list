@@ -10,7 +10,7 @@ import ToDoList from './toDoList.js';
 
   describe('Adding', () => {
 
-  console.log (localStorage)
+  console.log(localStorage);
   const myToDo = new ToDoList(container);
 
   const item = {
@@ -20,7 +20,7 @@ import ToDoList from './toDoList.js';
     markUp : null,
   }
 
-    test('Test if instance of', () => {
+    test('Test if container is empty', () => {
       // expect(myToDo).toBeInstanceOf(ToDoList)
       expect(container.innerHTML).toHaveLength(0);
     })
@@ -30,7 +30,7 @@ import ToDoList from './toDoList.js';
       expect(container.innerHTML).not.toHaveLength(0);
     });
 
-    test('test removing elements', () =>{
-      myToDo.removeToDo
-    })
+    // test('test removing elements', () =>{
+    //   myToDo.removeToDo
+    // })
   });
